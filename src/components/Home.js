@@ -1,4 +1,4 @@
-import useFetch from "../CustomHooks/useFetch";
+import useFetch from "../custom_hooks/useFetch";
 import BlogPreview from "./BlogPreview";
 
 const Home = () => {
@@ -16,7 +16,8 @@ const Home = () => {
                         <BlogPreview 
                             title = { blog.title }  
                             author = { blog.author }  
-                            body = { blog.body.substring(0, 150) }  
+                            body = { blog.body.substring(0, 150) } 
+                            key = { blog.id } 
                         />
                     ))
                     

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap');
 
 :root{
-    --primary_color_light : #fd6c84;
+    --primary_color_light : #ff9bac;
     --primary_color_default : #f53f5e;
     --primary_color_dark : #af1e36;
 
@@ -25,6 +25,7 @@ body {
     font-size: 15px;
     font-family: 'Poppins';
     color: var(--font_color_default);
+    text-align: left;
 }
 
 button {
@@ -37,9 +38,22 @@ button:hover {
     background-color: var(--primary_color_dark);
 }
 
+h1 {
+    font-weight: 500;
+    color : var(--primary_color_dark);
+    font-size: 35px;
+    margin: 30px 0;
+}
+
+/* CONTENT STYLE */
+.content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 /* NAVBAR STYLE */
 .navbar {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 15px 0;
     border-bottom: 1px solid var(--white_dark);
@@ -55,7 +69,32 @@ button:hover {
     text-transform: uppercase;
 }
 
+/* BLOG PREVIEW STYLE */
+.blog-preview {
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid var(--primary_color_light);
+}
 
+.blog-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary_color_default);
+}
+
+.blog-author{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--font_color_light);
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.blog-body{
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 20px;
+}
 
 /* FOOTER STYLES */
 
@@ -64,6 +103,9 @@ button:hover {
     padding: 5px 30px;
     background: var(--font_color_dark);
     color: var(--white) !important;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 
 

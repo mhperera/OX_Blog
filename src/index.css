@@ -9,13 +9,16 @@
     --font_color_default : #3a3a3a;
     --font_color_dark : #1f1f1f;
 
-    --font_color_light : #ffffff;
+    --white : #ffffff;
+    --white_dark : #efefef;
 }
 
 * {
     margin: 0;
     padding: 0;
     text-decoration: none !important;
+    background-origin: padding-box;
+    border: none;
 }
 
 body {
@@ -24,13 +27,43 @@ body {
     color: var(--font_color_default);
 }
 
+button {
+    padding: 5px 15px;
+    color: var(--white);
+    background-color: var(--primary_color_default);
+}
+
+button:hover {
+    background-color: var(--primary_color_dark);
+}
+
+/* NAVBAR STYLE */
+.navbar {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--white_dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--primary_color_default);
+    text-transform: uppercase;
+}
+
+
+
 /* FOOTER STYLES */
 
 .footer {
     width: 100%;
     padding: 5px 30px;
     background: var(--font_color_dark);
-    color: var(--font_color_light) !important;
+    color: var(--white) !important;
 }
 
 

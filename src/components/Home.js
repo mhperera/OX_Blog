@@ -1,4 +1,5 @@
 import useFetch from "../custom_hooks/useFetch";
+import BlogList from "./BlogList";
 import BlogPreview from "./BlogPreview";
 import Hero from "./Hero";
 
@@ -11,21 +12,7 @@ const Home = () => {
 
             <Hero />
 
-            <div className="container row">
-                { blogs && (
-                
-                        blogs.map((blog) => (
-                            <BlogPreview 
-                                title = { blog.title }  
-                                author = { blog.author }  
-                                body = { blog.body.substring(0, 150)+' ...' } 
-                                key = { blog.id } 
-                            />
-                        ))
-                        
-                    )
-                } 
-            </div>
+            {/* <BlogList blogs = {blogs} /> */}
 
         </div>
     );

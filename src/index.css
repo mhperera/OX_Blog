@@ -31,7 +31,7 @@ body {
 }
 
 button {
-    padding: 5px 15px;
+    padding: 10px 15px;
     color: var(--white);
     background-color: var(--primary_color_default);
 }
@@ -49,7 +49,6 @@ h1 {
 
 .container {
     max-width: 1300px;
-    padding: 40px 0;
     margin: 0 auto;
 }
 
@@ -86,8 +85,29 @@ h1 {
 
 /* HERO STYLE */
 .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 300px;
+    line-height:20px;
+    overflow:hidden;
+    /* white-space: pre; */
     background-image: url('https://images.squarespace-cdn.com/content/v1/5b553895697a98cf2cef2bc6/1597868990014-ILJ1POL9Y4YJMD6WA5IT/Blog+Hero+Final.001.jpeg?format=2500w');
+}
+
+.hero p {
+    max-width: 1000px;     
+}
+
+.hero h1{
+    color: var(--white);
+}
+
+/* BLOG LIST STYLE */  
+
+.blog-list .card {
+	margin: 5px;
 }
 
 /* BLOG PREVIEW STYLE */

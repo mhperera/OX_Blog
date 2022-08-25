@@ -13,6 +13,7 @@ const BlogList = ({blogs}) => {
                                 title = { blog.title }  
                                 author = { blog.author }  
                                 body = { blog.body.substring(0, 150)+' ...' } 
+                                id = { blog.id }
                                 key = { blog.id } 
                             />
                         ))

@@ -9,8 +9,10 @@ const Navbar = () => {
                 <div className="logo">OX Blog</div>
             </Link>
 
-            <button>New Blog</button>
-
+            <Link to="/create">
+                <button>New Blog</button>
+            </Link>   
+             
         </div>
     );
     

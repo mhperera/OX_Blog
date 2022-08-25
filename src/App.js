@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import AllBlogs from './components/AllBlogs';
 import CatergoryDetail from './components/CatergoryDetail';
 import BlogDetail from './components/BlogDetail';
+import CreateBlog from './components/CreateBlog';
 
 function App() {
 	return (
@@ -34,7 +35,9 @@ function App() {
 							<CatergoryDetail />
 						</Route>
 
-						
+						<Route path="/create">
+							<CreateBlog />
+						</Route>
 						
 					</Switch>
 				

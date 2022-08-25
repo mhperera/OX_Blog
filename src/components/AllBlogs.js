@@ -8,14 +8,14 @@ const AllBlogs = () => {
     return (
         <div className="all-blogs">
 
-            <div className="container">
-
-                <h1>All Blogs</h1>
-        
-                <BlogList blogs = { blogs }/>
-
-            </div>
-
+            { blogs && (
+                <div className="container">    
+                    <h1>All Blogs</h1>
+                                    
+                    <BlogList blogs = { blogs } />
+                </div>
+            )}
+                
         </div>
     );
 

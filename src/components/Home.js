@@ -1,7 +1,7 @@
 import useFetch from "../custom_hooks/useFetch";
-import BlogList from "./BlogList";
-import BlogPreview from "./BlogPreview";
+import CatergoryList from "./CatergoryList";
 import Hero from "./Hero";
+import BlogList from "./BlogList";
 
 const Home = () => {
 
@@ -11,6 +11,8 @@ const Home = () => {
         <div className="home">
 
             <Hero />
+            
+            <CatergoryList />
 
             {/* <BlogList blogs = {blogs} /> */}
 

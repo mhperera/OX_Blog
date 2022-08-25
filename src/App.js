@@ -4,8 +4,8 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import AllBlogs from './components/AllBlogs';
-
-
+import CatergoryDetail from './components/CatergoryDetail';
+import BlogDetail from './components/BlogDetail';
 
 function App() {
 	return (
@@ -22,9 +22,19 @@ function App() {
 							<Home />
 						</Route>
 
-						<Route path="/blogs">
+						<Route exact path="/blogs">
 							<AllBlogs />
 						</Route>
+
+						<Route path="/blogs/:id">
+							<BlogDetail />
+						</Route>
+
+						<Route path="/catergories/:id">
+							<CatergoryDetail />
+						</Route>
+
+						
 						
 					</Switch>
 				

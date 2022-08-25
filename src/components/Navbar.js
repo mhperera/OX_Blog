@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
 
     return (
         <div className="navbar">
-
-            <div className="logo">OX Blog</div>
+            
+            <Link to="/">
+                <div className="logo">OX Blog</div>
+            </Link>
 
             <button>New Blog</button>
 
